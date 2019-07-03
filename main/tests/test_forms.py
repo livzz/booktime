@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.core import mail
-import forms
+from main import forms
 
 
 class TestForm(TestCase):
