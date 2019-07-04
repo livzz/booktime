@@ -4,6 +4,16 @@ from main import views
 
 urlpatterns = [
     path(
+        "products/<slug:tag>/",
+        views.ProductListView.as_view(),
+        name="product",
+    ),
+    # path(
+    #     "products/",
+    #     views.ProductListView.as_view(),
+    #     name="products",
+    # ),
+    path(
         "about-us/",
         TemplateView.as_view(template_name="about_us.html"),
         name="about_us"

@@ -29,11 +29,16 @@ css/bootstrap.min.css">
                 <li class="nav-item {% if request.path == '/contact-us/' %} active {% endif %}">
                     <a class="nav-link" href="/contact-us/">Contact Us</a>
                 </li>
+                <li class="nav-item {% if request.path == '/products/all/' %} active {% endif %}">
+                    <a class="nav-link" href="/products/all/">Products</a>
+                </li>
             </ul>
         </div>
     </nav>
-    {% block content %}
-    {% endblock content %}
+    <div class="container">
+        {% block content %}
+        {% endblock content %}
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/
